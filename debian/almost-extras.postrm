@@ -4,6 +4,7 @@ set -e
 
 files="
 gnome-language-selector
+software-properties-gtk
 ubuntu-drivers
 "
 
