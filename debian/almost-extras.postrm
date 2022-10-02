@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+files="
+gnome-language-selector
+ubuntu-drivers
+"
+
+if [ "$1" = remove -o "$1" = purge ]; then
+	for item in $files 
+	do
+		dpkg-divert --package almost-extras --remove --rename \
+		--divert "/usr/bin/_$item" "/usr/bin/$item"
+	done
+fi
+
+#DEBHELPER#

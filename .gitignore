@@ -1,0 +1,4 @@
+/debian/almost-extras
+/debian/almost-extras.substvars
+/debian/debhelper-build-stamp
+/debian/.debhelper
