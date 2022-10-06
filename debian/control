@@ -10,4 +10,5 @@ Rules-Requires-Root: no
 
 Package: almost-extras
 Architecture: all
+Depends: vanilla-control-center
 Description: Vanilla OS adaptions for the almost utility.

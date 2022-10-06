@@ -1,6 +1,2 @@
 #!/bin/sh
-if [ -z "$(which almost)" ]; then
-    _software-properties-gtk
-else
-    notify-send "Immutability", "You can't change the software sources while immutability is turned on."
-fi
+vanilla-control-center
