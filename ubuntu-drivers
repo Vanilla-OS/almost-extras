@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ -z "$(which almost)" ]; then
-    _ubuntu-drivers
+    _ubuntu-drivers "$@"
 else
-    almost run _ubuntu-drivers
+    almost run _ubuntu-drivers "$@"
 fi

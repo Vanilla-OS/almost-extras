@@ -1,8 +1,8 @@
 #!/bin/sh
 if [ -z "$(which almost)" ]; then
-    _gnome-language-selector
+    _gnome-language-selector "$@"
 else
     pkexec almost enter rw
-    _gnome-language-selector
+    _gnome-language-selector "$@"
     pkexec almost enter ro
 fi
